@@ -1,0 +1,6 @@
+{
+  "log_file": "Network_Malware_analyzer/objects/alerts.csv",
+  "packet_filter_ports": [80, 443],
+  "yara_rules_dir": "yara_rules",
+  "pcap_dir": "data/pcaps"
+}
