@@ -1,0 +1,48 @@
+PHISHING WEBSITE DETECTION - EDA SUMMARY REPORT
+================================================================================
+
+Dataset Overview:
+  - Total Samples: 11430
+  - Numerical Features: 87
+  - Classes: 2
+  - Class Imbalance: 1.00x
+
+Feature Importance:
+  - Top Feature: google_index (0.1697)
+  - Top 3 Features: google_index, page_rank, nb_hyperlinks
+
+URL Analysis:
+  - Average URL Length: 61.13
+  - URL Length Range: 12 - 1641
+
+Correlation Insights:
+  - Highly Correlated Pairs (>0.7): 14
+  
+Model Performance:
+  - Accuracy: 1.0000 (100.00%)
+  - Precision: 1.0000
+  - Recall: 1.0000
+  - F1-Score: 1.0000
+  - ROC-AUC: 1.0000
+  - CV Mean: 0.9654 ± 0.0024
+
+
+Top 15 Features:
+                 Feature  Importance
+85          google_index    0.169744
+86             page_rank    0.100367
+56         nb_hyperlinks    0.087397
+83           web_traffic    0.073052
+82            domain_age    0.038080
+20                nb_www    0.037966
+50           phish_hints    0.029911
+57   ratio_intHyperlinks    0.028965
+46     longest_word_path    0.026592
+74           safe_anchor    0.023949
+58   ratio_extHyperlinks    0.023629
+25      ratio_digits_url    0.019259
+62  ratio_extRedirection    0.018042
+0             length_url    0.016660
+49         avg_word_path    0.015603
+
+================================================================================
