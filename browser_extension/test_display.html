@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test VirusTotal Display</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      text-align: center;
+      color: #fff;
+    }
+    #status {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+    }
+    #result {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    p { margin: 5px 0; }
+    .metric { display: flex; justify-content: space-between; }
+    .metric span:last-child { font-weight: bold; }
+
+    /* VirusTotal Section Styles */
+    .vt-section {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .vt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .vt-label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .vt-status {
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .vt-malicious {
+      background-color: #dc3545;
+      color: white;
+    }
+    .vt-clean {
+      background-color: #28a745;
+      color: white;
+    }
+    .vt-disabled {
+      background-color: #6c757d;
+      color: white;
+    }
+    .vt-details {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .vt-metric {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+    .vt-metric-label {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+    .vt-metric-value {
+      color: white;
+      font-weight: bold;
+      text-align: right;
+      max-width: 180px;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h3>🛡️ PhishGuard AI - Test</h3>
+  <div id="status">SAFE</div>
+  <div id="result">
+    <div class="metric"><span>URL:</span> <span>https://github.com</span></div>
+    <div class="metric"><span>Risk Score:</span> <span>5/100</span></div>
+    <div class="metric"><span>RF Probability:</span> <span>2.1%</span></div>
+    <div class="metric"><span>LSTM Probability:</span> <span>1.8%</span></div>
+    <div class="metric"><span>Hybrid Probability:</span> <span>2.0%</span></div>
+    <div class="metric"><span>YARA Matches:</span> <span>0</span></div>
+    <div class="metric"><span>Typosquat Check:</span> <span>clear</span></div>
+
+    <!-- Enhanced VirusTotal Display -->
+    <div class="vt-section">
+      <div class="vt-header">
+        <span class="vt-label">🛡️ VirusTotal Analysis</span>
+        <span class="vt-status vt-clean">✅ CLEAN</span>
+      </div>
+      <div class="vt-details">
+        <div class="vt-metric">
+          <span class="vt-metric-label">URL Scan:</span>
+          <span class="vt-metric-value">🔴 0 | 🟡 0 | 🟢 85 | ⚪ 5</span>
+        </div>
+        <div class="vt-metric">
+          <span class="vt-metric-label">IP Analysis:</span>
+          <span class="vt-metric-value">🔴 0 | 🟡 0 | 🟢 92 | ⚪ 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
